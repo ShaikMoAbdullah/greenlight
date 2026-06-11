@@ -6,6 +6,9 @@ approve or deny with a note. Every decision is timestamped and attributed.
 
 Built with **Next.js (App Router) · Supabase (Postgres + Auth) · Vercel**.
 
+- **Live demo:** https://greenlight-liart.vercel.app/
+- **Source:** https://github.com/ShaikMoAbdullah/greenlight
+
 ---
 
 ## What it does
@@ -22,11 +25,11 @@ Built with **Next.js (App Router) · Supabase (Postgres + Auth) · Vercel**.
 
 ### How the flow maps to the app
 
-| Stage    | Who       | Where                                   |
-| -------- | --------- | --------------------------------------- |
-| Request  | Employee  | Dashboard → “New request” form          |
-| Review   | Manager   | Dashboard → “Needs your review” queue   |
-| Decision | Manager   | Approve / Deny + note (logged on card)  |
+| Stage    | Who      | Where                                  |
+| -------- | -------- | -------------------------------------- |
+| Request  | Employee | Dashboard → “New request” form         |
+| Review   | Manager  | Dashboard → “Needs your review” queue  |
+| Decision | Manager  | Approve / Deny + note (logged on card) |
 
 ---
 
@@ -140,4 +143,4 @@ npm run dev                     # http://localhost:3000
   is safe to expose to the browser because policies, not the client, decide what
   each user can read or write.
 - Decisions are restricted to approvers both in the server action and in RLS.
-- Requesters can only cancel their own *pending* requests.
+- Requesters can only cancel their own _pending_ requests.
